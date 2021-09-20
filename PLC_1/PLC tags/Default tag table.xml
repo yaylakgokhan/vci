@@ -77,7 +77,7 @@
           <ExternalVisible>true</ExternalVisible>
           <ExternalWritable>true</ExternalWritable>
           <LogicalAddress>%M0.1</LogicalAddress>
-          <Name>out_1</Name>
+          <Name>out_1_degistirildi</Name>
         </AttributeList>
         <ObjectList>
           <MultilingualText ID="5" CompositionName="Comment">
