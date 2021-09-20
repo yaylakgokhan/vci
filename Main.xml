@@ -64,7 +64,7 @@
     </Member>
   </Section>
   <Section Name="Temp">
-    <Member Name="deneme_1" Datatype="Bool" />
+    <Member Name="deneme_123" Datatype="Bool" />
     <Member Name="deneme_2" Datatype="Bool" />
   </Section>
   <Section Name="Constant" />
@@ -94,7 +94,7 @@
   <Parts>
     <Access Scope="LocalVariable" UId="21">
       <Symbol>
-        <Component Name="deneme_1" />
+        <Component Name="deneme_123" />
       </Symbol>
     </Access>
     <Access Scope="LocalVariable" UId="22">
