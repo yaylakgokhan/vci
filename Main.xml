@@ -65,7 +65,7 @@
   </Section>
   <Section Name="Temp">
     <Member Name="deneme_45" Datatype="Bool" />
-    <Member Name="deneme_2" Datatype="Bool" />
+    <Member Name="deneme_23" Datatype="Bool" />
   </Section>
   <Section Name="Constant" />
 </Sections></Interface>
