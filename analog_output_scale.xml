@@ -2,7 +2,7 @@
 <Document>
   <Engineering version="V16" />
   <DocumentInfo>
-    <Created>2021-09-20T12:49:59.0381993Z</Created>
+    <Created>2021-09-20T13:38:34.9793444Z</Created>
     <ExportSetting>WithDefaults</ExportSetting>
     <InstalledProducts>
       <Product>
@@ -86,12 +86,12 @@
   <Parts>
     <Access Scope="GlobalVariable" UId="21">
       <Symbol>
-        <Component Name="inp_1" />
+        <Component Name="inp_1_tia_da_degisti" />
       </Symbol>
     </Access>
     <Access Scope="GlobalVariable" UId="22">
       <Symbol>
-        <Component Name="out_1" />
+        <Component Name="out_1_degistirildi" />
       </Symbol>
     </Access>
     <Part Name="Contact" UId="23" />
