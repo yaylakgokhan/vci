@@ -1,0 +1,2631 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V16" />
+  <DocumentInfo>
+    <Created>2021-09-22T12:44:53.8050822Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V16 Update 1</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>SINAMICS Startdrive Advanced</DisplayName>
+        <DisplayVersion>V16 Update 5</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G130, G150, S120, S150, SINAMICS MV, S210</DisplayName>
+        <DisplayVersion>V16 Update 5</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G110M, G120, G120C, G120D, G120P, G115D</DisplayName>
+        <DisplayVersion>V16 Update 5</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Professional</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v4">
+  <Section Name="Input">
+    <Member Name="Acil_OK" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="Otomatik" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="Hata_Reset" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+  </Section>
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="Yanaştırma" Datatype="&quot;FB549.Divert.Sorter.Basing&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Sections><Section Name="Input"><Member Name="Acil_Yok" Datatype="Bool" /><Member Name="Sorter_Calisiyor" Datatype="Bool" /><Member Name="Sağ_Chute_Sorted_Sensoru" Datatype="Bool" /><Member Name="Sol_Chute_Sorted_Sensoru" Datatype="Bool" /><Member Name="Sağ_Chute_Aktif / Pasif" Datatype="Bool" /><Member Name="Sol_Chute_Aktif / Pasif" Datatype="Bool" /><Member Name="Chute_Rulo_Hatası" Datatype="Bool" /><Member Name="Divert_Sürücü_Hatası" Datatype="Bool" /><Member Name="Pozisyon_Olcme_Aktif" Datatype="Bool" /><Member Name="Sağ_Çıkış_Target" Datatype="Int" /><Member Name="Sol_Çıkış_Target" Datatype="Int" /><Member Name="CN_NO" Datatype="Int" /><Member Name="Aktüel Encoder Değeri" Datatype="LReal" /><Member Name="Birinci_Divert_Min" Datatype="LReal" /><Member Name="Birinci_Divert_Max" Datatype="LReal" /><Member Name="İkinci_Divert_Min" Datatype="LReal" /><Member Name="İkinci_Divert_Max" Datatype="LReal" /><Member Name="Max_Kutu_Adedi" Datatype="Int" /></Section><Section Name="Output"><Member Name="1_sol_Divert_Çalıştır" Datatype="Bool" /><Member Name="2_sol_Divert_Çalıştır" Datatype="Bool" /><Member Name="1_sağ_Divert_Çalıştır" Datatype="Bool" /><Member Name="2_sağ_Divert_Çalıştır" Datatype="Bool" /><Member Name="Sort Hatası" Datatype="Bool" /></Section><Section Name="InOut" /><Section Name="Static"><Member Name="Sort_Aktif_AUX" Datatype="Array[1..10] of Bool" /><Member Name="Sort_Aktif_PTrig" Datatype="Array[1..10] of Bool" /><Member Name="TOF_TIME" Datatype="Array[1..10] of TOF_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="TON_TIME" Datatype="Array[1..10] of TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="Sort_Aktif1" Datatype="Bool" /><Member Name="Sort_Aktif2" Datatype="Bool" /><Member Name="Sort_Aktif1_Sağ" Datatype="Bool" /><Member Name="Sort_Aktif2_Sağ" Datatype="Bool" /><Member Name="Sağ_Sort_Pasif" Datatype="Bool" /><Member Name="Sol_Sort_Pasif" Datatype="Bool" /><Member Name="Ikinci_Servo_Baslama" Datatype="Time" /><Member Name="Divert_Durdur" Datatype="Bool" /><Member Name="Sort_Aktif_1" Datatype="Array[1..10] of Bool" /><Member Name="Sort_Aktif_2" Datatype="Array[1..10] of Bool" /><Member Name="Sort_Aktif_1_Sağ" Datatype="Array[1..10] of Bool" /><Member Name="Sort_Aktif_2_Sağ" Datatype="Array[1..10] of Bool" /><Member Name="Sort_Ilk_Pozisyon" Datatype="Array[1..10] of LReal" /><Member Name="Sort_Ön_Pozisyon" Datatype="Array[1..10] of LReal" /><Member Name="Sort_Aktif_Boy" Datatype="Array[1..10] of LReal" /><Member Name="SortKutuNo" Datatype="Int" /><Member Name="Target100" Datatype="Bool" /><Member Name="Target200" Datatype="Bool" /></Section></Sections></Member>
+    <Member Name="FB548.Divert.Sorter.Chute_CN1_Divert1" Datatype="&quot;FB548.Divert.Sorter.Chute&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input"><Member Name="Acil_Yok" Datatype="Bool" /><Member Name="Sorter_Calisiyor" Datatype="Bool" /><Member Name="Sağ_Chute_Sorted_Sensoru" Datatype="Bool" /><Member Name="Sol_Chute_Sorted_Sensoru" Datatype="Bool" /><Member Name="Sağ_Chute_Aktif / Pasif" Datatype="Bool" /><Member Name="Sol_Chute_Aktif / Pasif" Datatype="Bool" /><Member Name="Chute_Rulo_Hatası" Datatype="Bool" /><Member Name="Divert_Sürücü_Hatası" Datatype="Bool" /><Member Name="Pozisyon_Olcme_Aktif" Datatype="Bool" /><Member Name="Sağ_Çıkış_Target" Datatype="Int" /><Member Name="Sol_Çıkış_Target" Datatype="Int" /><Member Name="CN_NO" Datatype="Int" /><Member Name="Aktüel Encoder Değeri" Datatype="LReal" /><Member Name="Birinci_Divert_Min" Datatype="LReal" /><Member Name="Birinci_Divert_Max" Datatype="LReal" /><Member Name="İkinci_Divert_Min" Datatype="LReal" /><Member Name="İkinci_Divert_Max" Datatype="LReal" /><Member Name="Max_Kutu_Adedi" Datatype="Int" /></Section><Section Name="Output"><Member Name="1_sol_Divert_Çalıştır" Datatype="Bool" /><Member Name="2_sol_Divert_Çalıştır" Datatype="Bool" /><Member Name="1_sağ_Divert_Çalıştır" Datatype="Bool" /><Member Name="2_sağ_Divert_Çalıştır" Datatype="Bool" /><Member Name="Sort Hatası" Datatype="Bool" /></Section><Section Name="InOut" /><Section Name="Static"><Member Name="Sort_Aktif_AUX" Datatype="Array[1..10] of Bool" /><Member Name="Sort_Aktif_PTrig" Datatype="Array[1..10] of Bool" /><Member Name="TOF_TIME" Datatype="Array[1..10] of TOF_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="TON_TIME" Datatype="Array[1..10] of TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="Sort_Aktif1" Datatype="Bool" /><Member Name="Sort_Aktif2" Datatype="Bool" /><Member Name="Sort_Aktif1_Sağ" Datatype="Bool" /><Member Name="Sort_Aktif2_Sağ" Datatype="Bool" /><Member Name="Sağ_Sort_Pasif" Datatype="Bool" /><Member Name="Sol_Sort_Pasif" Datatype="Bool" /><Member Name="Ikinci_Servo_Baslama" Datatype="Time" /><Member Name="Divert_Durdur" Datatype="Bool" /><Member Name="Sort_Aktif_1" Datatype="Array[1..10] of Bool" /><Member Name="Sort_Aktif_2" Datatype="Array[1..10] of Bool" /><Member Name="Sort_Aktif_1_Sağ" Datatype="Array[1..10] of Bool" /><Member Name="Sort_Aktif_2_Sağ" Datatype="Array[1..10] of Bool" /><Member Name="Sort_Ilk_Pozisyon" Datatype="Array[1..10] of LReal" /><Member Name="Sort_Ön_Pozisyon" Datatype="Array[1..10] of LReal" /><Member Name="Sort_Aktif_Boy" Datatype="Array[1..10] of LReal" /><Member Name="SortKutuNo" Datatype="Int" /></Section></Sections></Member>
+    <Member Name="FB548.Divert.Sorter.Chute_CN2_Divert2" Datatype="&quot;FB548.Divert.Sorter.Chute&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input"><Member Name="Acil_Yok" Datatype="Bool" /><Member Name="Sorter_Calisiyor" Datatype="Bool" /><Member Name="Sağ_Chute_Sorted_Sensoru" Datatype="Bool" /><Member Name="Sol_Chute_Sorted_Sensoru" Datatype="Bool" /><Member Name="Sağ_Chute_Aktif / Pasif" Datatype="Bool" /><Member Name="Sol_Chute_Aktif / Pasif" Datatype="Bool" /><Member Name="Chute_Rulo_Hatası" Datatype="Bool" /><Member Name="Divert_Sürücü_Hatası" Datatype="Bool" /><Member Name="Pozisyon_Olcme_Aktif" Datatype="Bool" /><Member Name="Sağ_Çıkış_Target" Datatype="Int" /><Member Name="Sol_Çıkış_Target" Datatype="Int" /><Member Name="CN_NO" Datatype="Int" /><Member Name="Aktüel Encoder Değeri" Datatype="LReal" /><Member Name="Birinci_Divert_Min" Datatype="LReal" /><Member Name="Birinci_Divert_Max" Datatype="LReal" /><Member Name="İkinci_Divert_Min" Datatype="LReal" /><Member Name="İkinci_Divert_Max" Datatype="LReal" /><Member Name="Max_Kutu_Adedi" Datatype="Int" /></Section><Section Name="Output"><Member Name="1_sol_Divert_Çalıştır" Datatype="Bool" /><Member Name="2_sol_Divert_Çalıştır" Datatype="Bool" /><Member Name="1_sağ_Divert_Çalıştır" Datatype="Bool" /><Member Name="2_sağ_Divert_Çalıştır" Datatype="Bool" /><Member Name="Sort Hatası" Datatype="Bool" /></Section><Section Name="InOut" /><Section Name="Static"><Member Name="Sort_Aktif_AUX" Datatype="Array[1..10] of Bool" /><Member Name="Sort_Aktif_PTrig" Datatype="Array[1..10] of Bool" /><Member Name="TOF_TIME" Datatype="Array[1..10] of TOF_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="TON_TIME" Datatype="Array[1..10] of TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="Sort_Aktif1" Datatype="Bool" /><Member Name="Sort_Aktif2" Datatype="Bool" /><Member Name="Sort_Aktif1_Sağ" Datatype="Bool" /><Member Name="Sort_Aktif2_Sağ" Datatype="Bool" /><Member Name="Sağ_Sort_Pasif" Datatype="Bool" /><Member Name="Sol_Sort_Pasif" Datatype="Bool" /><Member Name="Ikinci_Servo_Baslama" Datatype="Time" /><Member Name="Divert_Durdur" Datatype="Bool" /><Member Name="Sort_Aktif_1" Datatype="Array[1..10] of Bool" /><Member Name="Sort_Aktif_2" Datatype="Array[1..10] of Bool" /><Member Name="Sort_Aktif_1_Sağ" Datatype="Array[1..10] of Bool" /><Member Name="Sort_Aktif_2_Sağ" Datatype="Array[1..10] of Bool" /><Member Name="Sort_Ilk_Pozisyon" Datatype="Array[1..10] of LReal" /><Member Name="Sort_Ön_Pozisyon" Datatype="Array[1..10] of LReal" /><Member Name="Sort_Aktif_Boy" Datatype="Array[1..10] of LReal" /><Member Name="SortKutuNo" Datatype="Int" /></Section></Sections></Member>
+    <Member Name="FB548.Divert.Sorter.Chute_CN3_Divert3" Datatype="&quot;FB548.Divert.Sorter.Chute&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input"><Member Name="Acil_Yok" Datatype="Bool" /><Member Name="Sorter_Calisiyor" Datatype="Bool" /><Member Name="Sağ_Chute_Sorted_Sensoru" Datatype="Bool" /><Member Name="Sol_Chute_Sorted_Sensoru" Datatype="Bool" /><Member Name="Sağ_Chute_Aktif / Pasif" Datatype="Bool" /><Member Name="Sol_Chute_Aktif / Pasif" Datatype="Bool" /><Member Name="Chute_Rulo_Hatası" Datatype="Bool" /><Member Name="Divert_Sürücü_Hatası" Datatype="Bool" /><Member Name="Pozisyon_Olcme_Aktif" Datatype="Bool" /><Member Name="Sağ_Çıkış_Target" Datatype="Int" /><Member Name="Sol_Çıkış_Target" Datatype="Int" /><Member Name="CN_NO" Datatype="Int" /><Member Name="Aktüel Encoder Değeri" Datatype="LReal" /><Member Name="Birinci_Divert_Min" Datatype="LReal" /><Member Name="Birinci_Divert_Max" Datatype="LReal" /><Member Name="İkinci_Divert_Min" Datatype="LReal" /><Member Name="İkinci_Divert_Max" Datatype="LReal" /><Member Name="Max_Kutu_Adedi" Datatype="Int" /></Section><Section Name="Output"><Member Name="1_sol_Divert_Çalıştır" Datatype="Bool" /><Member Name="2_sol_Divert_Çalıştır" Datatype="Bool" /><Member Name="1_sağ_Divert_Çalıştır" Datatype="Bool" /><Member Name="2_sağ_Divert_Çalıştır" Datatype="Bool" /><Member Name="Sort Hatası" Datatype="Bool" /></Section><Section Name="InOut" /><Section Name="Static"><Member Name="Sort_Aktif_AUX" Datatype="Array[1..10] of Bool" /><Member Name="Sort_Aktif_PTrig" Datatype="Array[1..10] of Bool" /><Member Name="TOF_TIME" Datatype="Array[1..10] of TOF_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="TON_TIME" Datatype="Array[1..10] of TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="Sort_Aktif1" Datatype="Bool" /><Member Name="Sort_Aktif2" Datatype="Bool" /><Member Name="Sort_Aktif1_Sağ" Datatype="Bool" /><Member Name="Sort_Aktif2_Sağ" Datatype="Bool" /><Member Name="Sağ_Sort_Pasif" Datatype="Bool" /><Member Name="Sol_Sort_Pasif" Datatype="Bool" /><Member Name="Ikinci_Servo_Baslama" Datatype="Time" /><Member Name="Divert_Durdur" Datatype="Bool" /><Member Name="Sort_Aktif_1" Datatype="Array[1..10] of Bool" /><Member Name="Sort_Aktif_2" Datatype="Array[1..10] of Bool" /><Member Name="Sort_Aktif_1_Sağ" Datatype="Array[1..10] of Bool" /><Member Name="Sort_Aktif_2_Sağ" Datatype="Array[1..10] of Bool" /><Member Name="Sort_Ilk_Pozisyon" Datatype="Array[1..10] of LReal" /><Member Name="Sort_Ön_Pozisyon" Datatype="Array[1..10] of LReal" /><Member Name="Sort_Aktif_Boy" Datatype="Array[1..10] of LReal" /><Member Name="SortKutuNo" Datatype="Int" /></Section></Sections></Member>
+    <Member Name="FB548.Divert.Sorter.Chute_CN4_Divert4" Datatype="&quot;FB548.Divert.Sorter.Chute&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input"><Member Name="Acil_Yok" Datatype="Bool" /><Member Name="Sorter_Calisiyor" Datatype="Bool" /><Member Name="Sağ_Chute_Sorted_Sensoru" Datatype="Bool" /><Member Name="Sol_Chute_Sorted_Sensoru" Datatype="Bool" /><Member Name="Sağ_Chute_Aktif / Pasif" Datatype="Bool" /><Member Name="Sol_Chute_Aktif / Pasif" Datatype="Bool" /><Member Name="Chute_Rulo_Hatası" Datatype="Bool" /><Member Name="Divert_Sürücü_Hatası" Datatype="Bool" /><Member Name="Pozisyon_Olcme_Aktif" Datatype="Bool" /><Member Name="Sağ_Çıkış_Target" Datatype="Int" /><Member Name="Sol_Çıkış_Target" Datatype="Int" /><Member Name="CN_NO" Datatype="Int" /><Member Name="Aktüel Encoder Değeri" Datatype="LReal" /><Member Name="Birinci_Divert_Min" Datatype="LReal" /><Member Name="Birinci_Divert_Max" Datatype="LReal" /><Member Name="İkinci_Divert_Min" Datatype="LReal" /><Member Name="İkinci_Divert_Max" Datatype="LReal" /><Member Name="Max_Kutu_Adedi" Datatype="Int" /></Section><Section Name="Output"><Member Name="1_sol_Divert_Çalıştır" Datatype="Bool" /><Member Name="2_sol_Divert_Çalıştır" Datatype="Bool" /><Member Name="1_sağ_Divert_Çalıştır" Datatype="Bool" /><Member Name="2_sağ_Divert_Çalıştır" Datatype="Bool" /><Member Name="Sort Hatası" Datatype="Bool" /></Section><Section Name="InOut" /><Section Name="Static"><Member Name="Sort_Aktif_AUX" Datatype="Array[1..10] of Bool" /><Member Name="Sort_Aktif_PTrig" Datatype="Array[1..10] of Bool" /><Member Name="TOF_TIME" Datatype="Array[1..10] of TOF_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="TON_TIME" Datatype="Array[1..10] of TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="Sort_Aktif1" Datatype="Bool" /><Member Name="Sort_Aktif2" Datatype="Bool" /><Member Name="Sort_Aktif1_Sağ" Datatype="Bool" /><Member Name="Sort_Aktif2_Sağ" Datatype="Bool" /><Member Name="Sağ_Sort_Pasif" Datatype="Bool" /><Member Name="Sol_Sort_Pasif" Datatype="Bool" /><Member Name="Ikinci_Servo_Baslama" Datatype="Time" /><Member Name="Divert_Durdur" Datatype="Bool" /><Member Name="Sort_Aktif_1" Datatype="Array[1..10] of Bool" /><Member Name="Sort_Aktif_2" Datatype="Array[1..10] of Bool" /><Member Name="Sort_Aktif_1_Sağ" Datatype="Array[1..10] of Bool" /><Member Name="Sort_Aktif_2_Sağ" Datatype="Array[1..10] of Bool" /><Member Name="Sort_Ilk_Pozisyon" Datatype="Array[1..10] of LReal" /><Member Name="Sort_Ön_Pozisyon" Datatype="Array[1..10] of LReal" /><Member Name="Sort_Aktif_Boy" Datatype="Array[1..10] of LReal" /><Member Name="SortKutuNo" Datatype="Int" /></Section></Sections></Member>
+    <Member Name="FB548.Divert.Sorter.Chute_CN5_Divert5" Datatype="&quot;FB548.Divert.Sorter.Chute&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input"><Member Name="Acil_Yok" Datatype="Bool" /><Member Name="Sorter_Calisiyor" Datatype="Bool" /><Member Name="Sağ_Chute_Sorted_Sensoru" Datatype="Bool" /><Member Name="Sol_Chute_Sorted_Sensoru" Datatype="Bool" /><Member Name="Sağ_Chute_Aktif / Pasif" Datatype="Bool" /><Member Name="Sol_Chute_Aktif / Pasif" Datatype="Bool" /><Member Name="Chute_Rulo_Hatası" Datatype="Bool" /><Member Name="Divert_Sürücü_Hatası" Datatype="Bool" /><Member Name="Pozisyon_Olcme_Aktif" Datatype="Bool" /><Member Name="Sağ_Çıkış_Target" Datatype="Int" /><Member Name="Sol_Çıkış_Target" Datatype="Int" /><Member Name="CN_NO" Datatype="Int" /><Member Name="Aktüel Encoder Değeri" Datatype="LReal" /><Member Name="Birinci_Divert_Min" Datatype="LReal" /><Member Name="Birinci_Divert_Max" Datatype="LReal" /><Member Name="İkinci_Divert_Min" Datatype="LReal" /><Member Name="İkinci_Divert_Max" Datatype="LReal" /><Member Name="Max_Kutu_Adedi" Datatype="Int" /></Section><Section Name="Output"><Member Name="1_sol_Divert_Çalıştır" Datatype="Bool" /><Member Name="2_sol_Divert_Çalıştır" Datatype="Bool" /><Member Name="1_sağ_Divert_Çalıştır" Datatype="Bool" /><Member Name="2_sağ_Divert_Çalıştır" Datatype="Bool" /><Member Name="Sort Hatası" Datatype="Bool" /></Section><Section Name="InOut" /><Section Name="Static"><Member Name="Sort_Aktif_AUX" Datatype="Array[1..10] of Bool" /><Member Name="Sort_Aktif_PTrig" Datatype="Array[1..10] of Bool" /><Member Name="TOF_TIME" Datatype="Array[1..10] of TOF_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="TON_TIME" Datatype="Array[1..10] of TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="Sort_Aktif1" Datatype="Bool" /><Member Name="Sort_Aktif2" Datatype="Bool" /><Member Name="Sort_Aktif1_Sağ" Datatype="Bool" /><Member Name="Sort_Aktif2_Sağ" Datatype="Bool" /><Member Name="Sağ_Sort_Pasif" Datatype="Bool" /><Member Name="Sol_Sort_Pasif" Datatype="Bool" /><Member Name="Ikinci_Servo_Baslama" Datatype="Time" /><Member Name="Divert_Durdur" Datatype="Bool" /><Member Name="Sort_Aktif_1" Datatype="Array[1..10] of Bool" /><Member Name="Sort_Aktif_2" Datatype="Array[1..10] of Bool" /><Member Name="Sort_Aktif_1_Sağ" Datatype="Array[1..10] of Bool" /><Member Name="Sort_Aktif_2_Sağ" Datatype="Array[1..10] of Bool" /><Member Name="Sort_Ilk_Pozisyon" Datatype="Array[1..10] of LReal" /><Member Name="Sort_Ön_Pozisyon" Datatype="Array[1..10] of LReal" /><Member Name="Sort_Aktif_Boy" Datatype="Array[1..10] of LReal" /><Member Name="SortKutuNo" Datatype="Int" /></Section></Sections></Member>
+  </Section>
+  <Section Name="Temp">
+    <Member Name="i" Datatype="Int" />
+    <Member Name="j" Datatype="Int" />
+  </Section>
+  <Section Name="Constant" />
+</Sections></Interface>
+      <IsIECCheckEnabled>false</IsIECCheckEnabled>
+      <IsRetainMemResEnabled>false</IsRetainMemResEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>FB_ChuteControl</Name>
+      <Number>4</Number>
+      <ProgrammingLanguage>LAD</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+      <UDABlockProperties />
+      <UDAEnableTagReadback>false</UDAEnableTagReadback>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>tr-TR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="4" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="Acil_OK" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="Otomatik" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="23">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>true</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="24">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>true</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="25">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>false</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="DB523.Pozisyon.Kontrol" />
+        <Component Name="Pozisyon Olcme Aktif" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="27">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>100</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="28">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>200</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="DB531_FIFO_Kontrol" />
+        <Component Name="CN_NO" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>2</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+        <Component Name="CNV_NO" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="30">
+      <Symbol>
+        <Component Name="DB522.HSC" />
+        <Component Name="CN2" />
+        <Component Name="Encoder_Value_mm" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="31">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="Divert1_Min_Pos" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>1</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="Divert1_Max_Pos" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>1</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="33">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="Divert2_Min_Pos" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>1</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="34">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="Divert2_Max_Pos" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>1</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="35">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>10</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="36">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="SOL" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>1</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="37">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="SOl_2" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>1</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="38">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="SAG" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>1</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="39">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="SAG_2" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>1</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="40">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="SOL" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>1</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="41">
+      <Symbol>
+        <Component Name="AUX" />
+        <Component Name="BIT" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>58</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="42">
+      <Symbol>
+        <Component Name="sayac" />
+      </Symbol>
+    </Access>
+    <Call UId="43">
+      <CallInfo Name="FB549.Divert.Sorter.Basing" BlockType="FB">
+        <Instance Scope="LocalVariable" UId="44">
+          <Component Name="Yanaştırma" />
+        </Instance>
+        <Parameter Name="Acil_Yok" Section="Input" Type="Bool" />
+        <Parameter Name="Sorter_Calisiyor" Section="Input" Type="Bool" />
+        <Parameter Name="Sağ_Chute_Sorted_Sensoru" Section="Input" Type="Bool" />
+        <Parameter Name="Sol_Chute_Sorted_Sensoru" Section="Input" Type="Bool" />
+        <Parameter Name="Sağ_Chute_Aktif / Pasif" Section="Input" Type="Bool" />
+        <Parameter Name="Sol_Chute_Aktif / Pasif" Section="Input" Type="Bool" />
+        <Parameter Name="Chute_Rulo_Hatası" Section="Input" Type="Bool" />
+        <Parameter Name="Divert_Sürücü_Hatası" Section="Input" Type="Bool" />
+        <Parameter Name="Pozisyon_Olcme_Aktif" Section="Input" Type="Bool" />
+        <Parameter Name="Sağ_Çıkış_Target" Section="Input" Type="Int" />
+        <Parameter Name="Sol_Çıkış_Target" Section="Input" Type="Int" />
+        <Parameter Name="CN_NO" Section="Input" Type="Int" />
+        <Parameter Name="Aktüel Encoder Değeri" Section="Input" Type="LReal" />
+        <Parameter Name="Birinci_Divert_Min" Section="Input" Type="LReal" />
+        <Parameter Name="Birinci_Divert_Max" Section="Input" Type="LReal" />
+        <Parameter Name="İkinci_Divert_Min" Section="Input" Type="LReal" />
+        <Parameter Name="İkinci_Divert_Max" Section="Input" Type="LReal" />
+        <Parameter Name="Max_Kutu_Adedi" Section="Input" Type="Int" />
+        <Parameter Name="1_sol_Divert_Çalıştır" Section="Output" Type="Bool" />
+        <Parameter Name="2_sol_Divert_Çalıştır" Section="Output" Type="Bool" />
+        <Parameter Name="1_sağ_Divert_Çalıştır" Section="Output" Type="Bool" />
+        <Parameter Name="2_sağ_Divert_Çalıştır" Section="Output" Type="Bool" />
+        <Parameter Name="Sort Hatası" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+    <Part Name="PContact" UId="45" />
+    <Part Name="Inc" UId="46" DisabledENO="true">
+      <TemplateValue Name="DestType" Type="Type">DInt</TemplateValue>
+    </Part>
+  </Parts>
+  <Wires>
+    <Wire UId="51">
+      <Powerrail />
+      <NameCon UId="43" Name="en" />
+      <NameCon UId="45" Name="pre" />
+    </Wire>
+    <Wire UId="52">
+      <IdentCon UId="21" />
+      <NameCon UId="43" Name="Acil_Yok" />
+    </Wire>
+    <Wire UId="53">
+      <IdentCon UId="22" />
+      <NameCon UId="43" Name="Sorter_Calisiyor" />
+    </Wire>
+    <Wire UId="54">
+      <OpenCon UId="47" />
+      <NameCon UId="43" Name="Sağ_Chute_Sorted_Sensoru" />
+    </Wire>
+    <Wire UId="55">
+      <OpenCon UId="48" />
+      <NameCon UId="43" Name="Sol_Chute_Sorted_Sensoru" />
+    </Wire>
+    <Wire UId="56">
+      <IdentCon UId="23" />
+      <NameCon UId="43" Name="Sağ_Chute_Aktif / Pasif" />
+    </Wire>
+    <Wire UId="57">
+      <IdentCon UId="24" />
+      <NameCon UId="43" Name="Sol_Chute_Aktif / Pasif" />
+    </Wire>
+    <Wire UId="58">
+      <IdentCon UId="25" />
+      <NameCon UId="43" Name="Chute_Rulo_Hatası" />
+    </Wire>
+    <Wire UId="59">
+      <OpenCon UId="49" />
+      <NameCon UId="43" Name="Divert_Sürücü_Hatası" />
+    </Wire>
+    <Wire UId="60">
+      <IdentCon UId="26" />
+      <NameCon UId="43" Name="Pozisyon_Olcme_Aktif" />
+    </Wire>
+    <Wire UId="61">
+      <IdentCon UId="27" />
+      <NameCon UId="43" Name="Sağ_Çıkış_Target" />
+    </Wire>
+    <Wire UId="62">
+      <IdentCon UId="28" />
+      <NameCon UId="43" Name="Sol_Çıkış_Target" />
+    </Wire>
+    <Wire UId="63">
+      <IdentCon UId="29" />
+      <NameCon UId="43" Name="CN_NO" />
+    </Wire>
+    <Wire UId="64">
+      <IdentCon UId="30" />
+      <NameCon UId="43" Name="Aktüel Encoder Değeri" />
+    </Wire>
+    <Wire UId="65">
+      <IdentCon UId="31" />
+      <NameCon UId="43" Name="Birinci_Divert_Min" />
+    </Wire>
+    <Wire UId="66">
+      <IdentCon UId="32" />
+      <NameCon UId="43" Name="Birinci_Divert_Max" />
+    </Wire>
+    <Wire UId="67">
+      <IdentCon UId="33" />
+      <NameCon UId="43" Name="İkinci_Divert_Min" />
+    </Wire>
+    <Wire UId="68">
+      <IdentCon UId="34" />
+      <NameCon UId="43" Name="İkinci_Divert_Max" />
+    </Wire>
+    <Wire UId="69">
+      <IdentCon UId="35" />
+      <NameCon UId="43" Name="Max_Kutu_Adedi" />
+    </Wire>
+    <Wire UId="70">
+      <NameCon UId="43" Name="1_sol_Divert_Çalıştır" />
+      <IdentCon UId="36" />
+    </Wire>
+    <Wire UId="71">
+      <NameCon UId="43" Name="2_sol_Divert_Çalıştır" />
+      <IdentCon UId="37" />
+    </Wire>
+    <Wire UId="72">
+      <NameCon UId="43" Name="1_sağ_Divert_Çalıştır" />
+      <IdentCon UId="38" />
+    </Wire>
+    <Wire UId="73">
+      <NameCon UId="43" Name="2_sağ_Divert_Çalıştır" />
+      <IdentCon UId="39" />
+    </Wire>
+    <Wire UId="74">
+      <NameCon UId="43" Name="Sort Hatası" />
+      <OpenCon UId="50" />
+    </Wire>
+    <Wire UId="75">
+      <IdentCon UId="41" />
+      <NameCon UId="45" Name="bit" />
+    </Wire>
+    <Wire UId="76">
+      <IdentCon UId="40" />
+      <NameCon UId="45" Name="operand" />
+    </Wire>
+    <Wire UId="77">
+      <NameCon UId="45" Name="out" />
+      <NameCon UId="46" Name="en" />
+    </Wire>
+    <Wire UId="78">
+      <IdentCon UId="42" />
+      <NameCon UId="46" Name="operand" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="5" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="6" CompositionName="Items">
+                <AttributeList>
+                  <Culture>tr-TR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="8" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>tr-TR</Culture>
+                  <Text>CN2 POS1065 Divert1</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>CN2 POS1065 Divert1</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="B" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="Acil_OK" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="Otomatik" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="DB_ChuteSensors" />
+        <Component Name="DivertOut" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>1</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+        <Component Name="Sorted" />
+        <Component Name="Sensor_N_Trig" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="DB_ChuteSensors" />
+        <Component Name="DivertOut" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>5</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+        <Component Name="Sorted" />
+        <Component Name="Sensor_N_Trig" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="25">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>true</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="26">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>true</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="27">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>false</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="DB523.Pozisyon.Kontrol" />
+        <Component Name="Pozisyon Olcme Aktif" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="29">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>101</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="30">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>201</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="31">
+      <Symbol>
+        <Component Name="DB531_FIFO_Kontrol" />
+        <Component Name="CN_NO" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>3</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+        <Component Name="CNV_NO" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="DB522.HSC" />
+        <Component Name="CN2" />
+        <Component Name="Encoder_Value_mm" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="33">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="Divert1_Min_Pos" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>2</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="34">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="Divert1_Max_Pos" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>2</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="35">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="Divert2_Min_Pos" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>2</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="36">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="Divert2_Max_Pos" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>2</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="37">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>10</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="38">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="SOL" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>2</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="39">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="SOl_2" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>2</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="40">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="SAG" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>2</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="41">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="SAG_2" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>2</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Call UId="42">
+      <CallInfo Name="FB548.Divert.Sorter.Chute" BlockType="FB">
+        <Instance Scope="LocalVariable" UId="43">
+          <Component Name="FB548.Divert.Sorter.Chute_CN2_Divert2" />
+        </Instance>
+        <Parameter Name="Acil_Yok" Section="Input" Type="Bool" />
+        <Parameter Name="Sorter_Calisiyor" Section="Input" Type="Bool" />
+        <Parameter Name="Sağ_Chute_Sorted_Sensoru" Section="Input" Type="Bool" />
+        <Parameter Name="Sol_Chute_Sorted_Sensoru" Section="Input" Type="Bool" />
+        <Parameter Name="Sağ_Chute_Aktif / Pasif" Section="Input" Type="Bool" />
+        <Parameter Name="Sol_Chute_Aktif / Pasif" Section="Input" Type="Bool" />
+        <Parameter Name="Chute_Rulo_Hatası" Section="Input" Type="Bool" />
+        <Parameter Name="Divert_Sürücü_Hatası" Section="Input" Type="Bool" />
+        <Parameter Name="Pozisyon_Olcme_Aktif" Section="Input" Type="Bool" />
+        <Parameter Name="Sağ_Çıkış_Target" Section="Input" Type="Int" />
+        <Parameter Name="Sol_Çıkış_Target" Section="Input" Type="Int" />
+        <Parameter Name="CN_NO" Section="Input" Type="Int" />
+        <Parameter Name="Aktüel Encoder Değeri" Section="Input" Type="LReal" />
+        <Parameter Name="Birinci_Divert_Min" Section="Input" Type="LReal" />
+        <Parameter Name="Birinci_Divert_Max" Section="Input" Type="LReal" />
+        <Parameter Name="İkinci_Divert_Min" Section="Input" Type="LReal" />
+        <Parameter Name="İkinci_Divert_Max" Section="Input" Type="LReal" />
+        <Parameter Name="Max_Kutu_Adedi" Section="Input" Type="Int" />
+        <Parameter Name="1_sol_Divert_Çalıştır" Section="Output" Type="Bool" />
+        <Parameter Name="2_sol_Divert_Çalıştır" Section="Output" Type="Bool" />
+        <Parameter Name="1_sağ_Divert_Çalıştır" Section="Output" Type="Bool" />
+        <Parameter Name="2_sağ_Divert_Çalıştır" Section="Output" Type="Bool" />
+        <Parameter Name="Sort Hatası" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="46">
+      <Powerrail />
+      <NameCon UId="42" Name="en" />
+    </Wire>
+    <Wire UId="47">
+      <IdentCon UId="21" />
+      <NameCon UId="42" Name="Acil_Yok" />
+    </Wire>
+    <Wire UId="48">
+      <IdentCon UId="22" />
+      <NameCon UId="42" Name="Sorter_Calisiyor" />
+    </Wire>
+    <Wire UId="49">
+      <IdentCon UId="23" />
+      <NameCon UId="42" Name="Sağ_Chute_Sorted_Sensoru" />
+    </Wire>
+    <Wire UId="50">
+      <IdentCon UId="24" />
+      <NameCon UId="42" Name="Sol_Chute_Sorted_Sensoru" />
+    </Wire>
+    <Wire UId="51">
+      <IdentCon UId="25" />
+      <NameCon UId="42" Name="Sağ_Chute_Aktif / Pasif" />
+    </Wire>
+    <Wire UId="52">
+      <IdentCon UId="26" />
+      <NameCon UId="42" Name="Sol_Chute_Aktif / Pasif" />
+    </Wire>
+    <Wire UId="53">
+      <IdentCon UId="27" />
+      <NameCon UId="42" Name="Chute_Rulo_Hatası" />
+    </Wire>
+    <Wire UId="54">
+      <OpenCon UId="44" />
+      <NameCon UId="42" Name="Divert_Sürücü_Hatası" />
+    </Wire>
+    <Wire UId="55">
+      <IdentCon UId="28" />
+      <NameCon UId="42" Name="Pozisyon_Olcme_Aktif" />
+    </Wire>
+    <Wire UId="56">
+      <IdentCon UId="29" />
+      <NameCon UId="42" Name="Sağ_Çıkış_Target" />
+    </Wire>
+    <Wire UId="57">
+      <IdentCon UId="30" />
+      <NameCon UId="42" Name="Sol_Çıkış_Target" />
+    </Wire>
+    <Wire UId="58">
+      <IdentCon UId="31" />
+      <NameCon UId="42" Name="CN_NO" />
+    </Wire>
+    <Wire UId="59">
+      <IdentCon UId="32" />
+      <NameCon UId="42" Name="Aktüel Encoder Değeri" />
+    </Wire>
+    <Wire UId="60">
+      <IdentCon UId="33" />
+      <NameCon UId="42" Name="Birinci_Divert_Min" />
+    </Wire>
+    <Wire UId="61">
+      <IdentCon UId="34" />
+      <NameCon UId="42" Name="Birinci_Divert_Max" />
+    </Wire>
+    <Wire UId="62">
+      <IdentCon UId="35" />
+      <NameCon UId="42" Name="İkinci_Divert_Min" />
+    </Wire>
+    <Wire UId="63">
+      <IdentCon UId="36" />
+      <NameCon UId="42" Name="İkinci_Divert_Max" />
+    </Wire>
+    <Wire UId="64">
+      <IdentCon UId="37" />
+      <NameCon UId="42" Name="Max_Kutu_Adedi" />
+    </Wire>
+    <Wire UId="65">
+      <NameCon UId="42" Name="1_sol_Divert_Çalıştır" />
+      <IdentCon UId="38" />
+    </Wire>
+    <Wire UId="66">
+      <NameCon UId="42" Name="2_sol_Divert_Çalıştır" />
+      <IdentCon UId="39" />
+    </Wire>
+    <Wire UId="67">
+      <NameCon UId="42" Name="1_sağ_Divert_Çalıştır" />
+      <IdentCon UId="40" />
+    </Wire>
+    <Wire UId="68">
+      <NameCon UId="42" Name="2_sağ_Divert_Çalıştır" />
+      <IdentCon UId="41" />
+    </Wire>
+    <Wire UId="69">
+      <NameCon UId="42" Name="Sort Hatası" />
+      <OpenCon UId="45" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="C" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>tr-TR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="F" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="10" CompositionName="Items">
+                <AttributeList>
+                  <Culture>tr-TR</Culture>
+                  <Text>CN3 POS1080 Divert2</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="11" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>CN3 POS1080 Divert2</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="12" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v3">
+  <NewLine Num="2" UId="21" />
+  <Token Text="IF" UId="22" />
+  <Blank Num="1" UId="23" />
+  <Access Scope="GlobalVariable" UId="24">
+    <Symbol UId="25">
+      <Component Name="DB541_Divert_Control" UId="26" />
+      <Token Text="." UId="27" />
+      <Component Name="SOL" UId="28">
+        <Token Text="[" UId="29" />
+        <Access Scope="LiteralConstant" UId="30">
+          <Constant UId="31">
+            <ConstantValue UId="33">2</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="34" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="35" />
+  <Token Text="THEN" UId="36" />
+  <NewLine Num="1" UId="37" />
+  <Blank Num="4" UId="38" />
+  <Access Scope="GlobalVariable" UId="39">
+    <Symbol UId="40">
+      <Component Name="DB541_Divert_Control" UId="41" />
+      <Token Text="." UId="42" />
+      <Component Name="SOl_2" UId="43">
+        <Token Text="[" UId="44" />
+        <Access Scope="LiteralConstant" UId="45">
+          <Constant UId="46">
+            <ConstantValue UId="48">2</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="49" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="50" />
+  <Token Text=":=" UId="51" />
+  <Blank Num="1" UId="52" />
+  <Access Scope="LiteralConstant" UId="53">
+    <Constant UId="54">
+      <ConstantValue UId="56">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="57" />
+  <NewLine Num="1" UId="58" />
+  <Token Text="END_IF" UId="59" />
+  <Token Text=";" UId="60" />
+  <NewLine Num="2" UId="61" />
+  <Token Text="IF" UId="62" />
+  <Blank Num="1" UId="63" />
+  <Access Scope="GlobalVariable" UId="64">
+    <Symbol UId="65">
+      <Component Name="DB541_Divert_Control" UId="66" />
+      <Token Text="." UId="67" />
+      <Component Name="SAG" UId="68">
+        <Token Text="[" UId="69" />
+        <Access Scope="LiteralConstant" UId="70">
+          <Constant UId="71">
+            <ConstantValue UId="73">2</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="74" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="75" />
+  <Token Text="THEN" UId="76" />
+  <NewLine Num="1" UId="77" />
+  <Blank Num="4" UId="78" />
+  <Access Scope="GlobalVariable" UId="79">
+    <Symbol UId="80">
+      <Component Name="DB541_Divert_Control" UId="81" />
+      <Token Text="." UId="82" />
+      <Component Name="SAG_2" UId="83">
+        <Token Text="[" UId="84" />
+        <Access Scope="LiteralConstant" UId="85">
+          <Constant UId="86">
+            <ConstantValue UId="88">2</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="89" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="90" />
+  <Token Text=":=" UId="91" />
+  <Blank Num="1" UId="92" />
+  <Access Scope="LiteralConstant" UId="93">
+    <Constant UId="94">
+      <ConstantValue UId="96">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="97" />
+  <NewLine Num="1" UId="98" />
+  <Token Text="END_IF" UId="99" />
+  <Token Text=";" UId="100" />
+  <NewLine Num="2" UId="101" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="13" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="14" CompositionName="Items">
+                <AttributeList>
+                  <Culture>tr-TR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="15" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="16" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="17" CompositionName="Items">
+                <AttributeList>
+                  <Culture>tr-TR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="18" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="19" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="Acil_OK" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="Otomatik" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="DB_ChuteSensors" />
+        <Component Name="DivertOut" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>2</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+        <Component Name="Sorted" />
+        <Component Name="Sensor_N_Trig" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="DB_ChuteSensors" />
+        <Component Name="DivertOut" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>6</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+        <Component Name="Sorted" />
+        <Component Name="Sensor_N_Trig" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="25">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>true</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="26">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>true</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="27">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>false</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="DB523.Pozisyon.Kontrol" />
+        <Component Name="Pozisyon Olcme Aktif" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="29">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>102</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="30">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>202</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="31">
+      <Symbol>
+        <Component Name="DB531_FIFO_Kontrol" />
+        <Component Name="CN_NO" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>4</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+        <Component Name="CNV_NO" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="DB522.HSC" />
+        <Component Name="CN3" />
+        <Component Name="Encoder_Value_mm" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="33">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="Divert1_Min_Pos" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>3</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="34">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="Divert1_Max_Pos" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>3</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="35">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="Divert2_Min_Pos" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>3</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="36">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="Divert2_Max_Pos" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>3</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="37">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>10</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="38">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="SOl_2" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>3</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="39">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="SOL" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>3</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="40">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="SAG_2" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>3</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="41">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="SAG" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>3</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Call UId="42">
+      <CallInfo Name="FB548.Divert.Sorter.Chute" BlockType="FB">
+        <Instance Scope="LocalVariable" UId="43">
+          <Component Name="FB548.Divert.Sorter.Chute_CN3_Divert3" />
+        </Instance>
+        <Parameter Name="Acil_Yok" Section="Input" Type="Bool" />
+        <Parameter Name="Sorter_Calisiyor" Section="Input" Type="Bool" />
+        <Parameter Name="Sağ_Chute_Sorted_Sensoru" Section="Input" Type="Bool" />
+        <Parameter Name="Sol_Chute_Sorted_Sensoru" Section="Input" Type="Bool" />
+        <Parameter Name="Sağ_Chute_Aktif / Pasif" Section="Input" Type="Bool" />
+        <Parameter Name="Sol_Chute_Aktif / Pasif" Section="Input" Type="Bool" />
+        <Parameter Name="Chute_Rulo_Hatası" Section="Input" Type="Bool" />
+        <Parameter Name="Divert_Sürücü_Hatası" Section="Input" Type="Bool" />
+        <Parameter Name="Pozisyon_Olcme_Aktif" Section="Input" Type="Bool" />
+        <Parameter Name="Sağ_Çıkış_Target" Section="Input" Type="Int" />
+        <Parameter Name="Sol_Çıkış_Target" Section="Input" Type="Int" />
+        <Parameter Name="CN_NO" Section="Input" Type="Int" />
+        <Parameter Name="Aktüel Encoder Değeri" Section="Input" Type="LReal" />
+        <Parameter Name="Birinci_Divert_Min" Section="Input" Type="LReal" />
+        <Parameter Name="Birinci_Divert_Max" Section="Input" Type="LReal" />
+        <Parameter Name="İkinci_Divert_Min" Section="Input" Type="LReal" />
+        <Parameter Name="İkinci_Divert_Max" Section="Input" Type="LReal" />
+        <Parameter Name="Max_Kutu_Adedi" Section="Input" Type="Int" />
+        <Parameter Name="1_sol_Divert_Çalıştır" Section="Output" Type="Bool" />
+        <Parameter Name="2_sol_Divert_Çalıştır" Section="Output" Type="Bool" />
+        <Parameter Name="1_sağ_Divert_Çalıştır" Section="Output" Type="Bool" />
+        <Parameter Name="2_sağ_Divert_Çalıştır" Section="Output" Type="Bool" />
+        <Parameter Name="Sort Hatası" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="46">
+      <Powerrail />
+      <NameCon UId="42" Name="en" />
+    </Wire>
+    <Wire UId="47">
+      <IdentCon UId="21" />
+      <NameCon UId="42" Name="Acil_Yok" />
+    </Wire>
+    <Wire UId="48">
+      <IdentCon UId="22" />
+      <NameCon UId="42" Name="Sorter_Calisiyor" />
+    </Wire>
+    <Wire UId="49">
+      <IdentCon UId="23" />
+      <NameCon UId="42" Name="Sağ_Chute_Sorted_Sensoru" />
+    </Wire>
+    <Wire UId="50">
+      <IdentCon UId="24" />
+      <NameCon UId="42" Name="Sol_Chute_Sorted_Sensoru" />
+    </Wire>
+    <Wire UId="51">
+      <IdentCon UId="25" />
+      <NameCon UId="42" Name="Sağ_Chute_Aktif / Pasif" />
+    </Wire>
+    <Wire UId="52">
+      <IdentCon UId="26" />
+      <NameCon UId="42" Name="Sol_Chute_Aktif / Pasif" />
+    </Wire>
+    <Wire UId="53">
+      <IdentCon UId="27" />
+      <NameCon UId="42" Name="Chute_Rulo_Hatası" />
+    </Wire>
+    <Wire UId="54">
+      <OpenCon UId="44" />
+      <NameCon UId="42" Name="Divert_Sürücü_Hatası" />
+    </Wire>
+    <Wire UId="55">
+      <IdentCon UId="28" />
+      <NameCon UId="42" Name="Pozisyon_Olcme_Aktif" />
+    </Wire>
+    <Wire UId="56">
+      <IdentCon UId="29" />
+      <NameCon UId="42" Name="Sağ_Çıkış_Target" />
+    </Wire>
+    <Wire UId="57">
+      <IdentCon UId="30" />
+      <NameCon UId="42" Name="Sol_Çıkış_Target" />
+    </Wire>
+    <Wire UId="58">
+      <IdentCon UId="31" />
+      <NameCon UId="42" Name="CN_NO" />
+    </Wire>
+    <Wire UId="59">
+      <IdentCon UId="32" />
+      <NameCon UId="42" Name="Aktüel Encoder Değeri" />
+    </Wire>
+    <Wire UId="60">
+      <IdentCon UId="33" />
+      <NameCon UId="42" Name="Birinci_Divert_Min" />
+    </Wire>
+    <Wire UId="61">
+      <IdentCon UId="34" />
+      <NameCon UId="42" Name="Birinci_Divert_Max" />
+    </Wire>
+    <Wire UId="62">
+      <IdentCon UId="35" />
+      <NameCon UId="42" Name="İkinci_Divert_Min" />
+    </Wire>
+    <Wire UId="63">
+      <IdentCon UId="36" />
+      <NameCon UId="42" Name="İkinci_Divert_Max" />
+    </Wire>
+    <Wire UId="64">
+      <IdentCon UId="37" />
+      <NameCon UId="42" Name="Max_Kutu_Adedi" />
+    </Wire>
+    <Wire UId="65">
+      <NameCon UId="42" Name="1_sol_Divert_Çalıştır" />
+      <IdentCon UId="38" />
+    </Wire>
+    <Wire UId="66">
+      <NameCon UId="42" Name="2_sol_Divert_Çalıştır" />
+      <IdentCon UId="39" />
+    </Wire>
+    <Wire UId="67">
+      <NameCon UId="42" Name="1_sağ_Divert_Çalıştır" />
+      <IdentCon UId="40" />
+    </Wire>
+    <Wire UId="68">
+      <NameCon UId="42" Name="2_sağ_Divert_Çalıştır" />
+      <IdentCon UId="41" />
+    </Wire>
+    <Wire UId="69">
+      <NameCon UId="42" Name="Sort Hatası" />
+      <OpenCon UId="45" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="1A" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="1B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>tr-TR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="1C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1D" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="1E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>tr-TR</Culture>
+                  <Text>CN4 POS1190 Divert3</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="1F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>CN4 POS1190 Divert3</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="20" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v3">
+  <NewLine Num="2" UId="21" />
+  <Token Text="IF" UId="22" />
+  <Blank Num="1" UId="23" />
+  <Access Scope="GlobalVariable" UId="24">
+    <Symbol UId="25">
+      <Component Name="DB541_Divert_Control" UId="26" />
+      <Token Text="." UId="27" />
+      <Component Name="SOl_2" UId="28">
+        <Token Text="[" UId="29" />
+        <Access Scope="LiteralConstant" UId="30">
+          <Constant UId="31">
+            <ConstantValue UId="33">3</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="34" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="35" />
+  <Token Text="THEN" UId="36" />
+  <NewLine Num="1" UId="37" />
+  <Blank Num="4" UId="38" />
+  <Access Scope="GlobalVariable" UId="39">
+    <Symbol UId="40">
+      <Component Name="DB541_Divert_Control" UId="41" />
+      <Token Text="." UId="42" />
+      <Component Name="SOL" UId="43">
+        <Token Text="[" UId="44" />
+        <Access Scope="LiteralConstant" UId="45">
+          <Constant UId="46">
+            <ConstantValue UId="48">3</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="49" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="50" />
+  <Token Text=":=" UId="51" />
+  <Blank Num="1" UId="52" />
+  <Access Scope="LiteralConstant" UId="53">
+    <Constant UId="54">
+      <ConstantValue UId="56">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="57" />
+  <NewLine Num="1" UId="58" />
+  <Token Text="END_IF" UId="59" />
+  <Token Text=";" UId="60" />
+  <NewLine Num="2" UId="61" />
+  <Token Text="IF" UId="62" />
+  <Blank Num="1" UId="63" />
+  <Access Scope="GlobalVariable" UId="64">
+    <Symbol UId="65">
+      <Component Name="DB541_Divert_Control" UId="66" />
+      <Token Text="." UId="67" />
+      <Component Name="SAG_2" UId="68">
+        <Token Text="[" UId="69" />
+        <Access Scope="LiteralConstant" UId="70">
+          <Constant UId="71">
+            <ConstantValue UId="73">3</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="74" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="75" />
+  <Token Text="THEN" UId="76" />
+  <NewLine Num="1" UId="77" />
+  <Blank Num="4" UId="78" />
+  <Access Scope="GlobalVariable" UId="79">
+    <Symbol UId="80">
+      <Component Name="DB541_Divert_Control" UId="81" />
+      <Token Text="." UId="82" />
+      <Component Name="SAG" UId="83">
+        <Token Text="[" UId="84" />
+        <Access Scope="LiteralConstant" UId="85">
+          <Constant UId="86">
+            <ConstantValue UId="88">3</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="89" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="90" />
+  <Token Text=":=" UId="91" />
+  <Blank Num="1" UId="92" />
+  <Access Scope="LiteralConstant" UId="93">
+    <Constant UId="94">
+      <ConstantValue UId="96">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="97" />
+  <NewLine Num="1" UId="98" />
+  <Token Text="END_IF" UId="99" />
+  <Token Text=";" UId="100" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="21" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="22" CompositionName="Items">
+                <AttributeList>
+                  <Culture>tr-TR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="23" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="24" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="25" CompositionName="Items">
+                <AttributeList>
+                  <Culture>tr-TR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="26" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="27" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="Acil_OK" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="Otomatik" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="DB_ChuteSensors" />
+        <Component Name="DivertOut" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>3</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+        <Component Name="Sorted" />
+        <Component Name="Sensor_N_Trig" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="DB_ChuteSensors" />
+        <Component Name="DivertOut" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>7</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+        <Component Name="Sorted" />
+        <Component Name="Sensor_N_Trig" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="25">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>true</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="26">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>true</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="27">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>false</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="DB523.Pozisyon.Kontrol" />
+        <Component Name="Pozisyon Olcme Aktif" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="29">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>103</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="30">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>203</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="31">
+      <Symbol>
+        <Component Name="DB531_FIFO_Kontrol" />
+        <Component Name="CN_NO" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>5</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+        <Component Name="CNV_NO" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="DB522.HSC" />
+        <Component Name="CN4" />
+        <Component Name="Encoder_Value_mm" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="33">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="Divert1_Min_Pos" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>4</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="34">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="Divert1_Max_Pos" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>4</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="35">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="Divert2_Min_Pos" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>4</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="36">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="Divert2_Max_Pos" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>4</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="37">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>10</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="38">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="SOl_2" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>4</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="39">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="SOL" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>4</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="40">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="SAG_2" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>4</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="41">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="SAG" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>4</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="42">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="SOL" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>4</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="43">
+      <Symbol>
+        <Component Name="AUX" />
+        <Component Name="BIT" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>23</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Call UId="44">
+      <CallInfo Name="FB548.Divert.Sorter.Chute" BlockType="FB">
+        <Instance Scope="LocalVariable" UId="45">
+          <Component Name="FB548.Divert.Sorter.Chute_CN4_Divert4" />
+        </Instance>
+        <Parameter Name="Acil_Yok" Section="Input" Type="Bool" />
+        <Parameter Name="Sorter_Calisiyor" Section="Input" Type="Bool" />
+        <Parameter Name="Sağ_Chute_Sorted_Sensoru" Section="Input" Type="Bool" />
+        <Parameter Name="Sol_Chute_Sorted_Sensoru" Section="Input" Type="Bool" />
+        <Parameter Name="Sağ_Chute_Aktif / Pasif" Section="Input" Type="Bool" />
+        <Parameter Name="Sol_Chute_Aktif / Pasif" Section="Input" Type="Bool" />
+        <Parameter Name="Chute_Rulo_Hatası" Section="Input" Type="Bool" />
+        <Parameter Name="Divert_Sürücü_Hatası" Section="Input" Type="Bool" />
+        <Parameter Name="Pozisyon_Olcme_Aktif" Section="Input" Type="Bool" />
+        <Parameter Name="Sağ_Çıkış_Target" Section="Input" Type="Int" />
+        <Parameter Name="Sol_Çıkış_Target" Section="Input" Type="Int" />
+        <Parameter Name="CN_NO" Section="Input" Type="Int" />
+        <Parameter Name="Aktüel Encoder Değeri" Section="Input" Type="LReal" />
+        <Parameter Name="Birinci_Divert_Min" Section="Input" Type="LReal" />
+        <Parameter Name="Birinci_Divert_Max" Section="Input" Type="LReal" />
+        <Parameter Name="İkinci_Divert_Min" Section="Input" Type="LReal" />
+        <Parameter Name="İkinci_Divert_Max" Section="Input" Type="LReal" />
+        <Parameter Name="Max_Kutu_Adedi" Section="Input" Type="Int" />
+        <Parameter Name="1_sol_Divert_Çalıştır" Section="Output" Type="Bool" />
+        <Parameter Name="2_sol_Divert_Çalıştır" Section="Output" Type="Bool" />
+        <Parameter Name="1_sağ_Divert_Çalıştır" Section="Output" Type="Bool" />
+        <Parameter Name="2_sağ_Divert_Çalıştır" Section="Output" Type="Bool" />
+        <Parameter Name="Sort Hatası" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+    <Part Name="Contact" UId="46" />
+    <Part Name="SCoil" UId="47" />
+  </Parts>
+  <Wires>
+    <Wire UId="50">
+      <Powerrail />
+      <NameCon UId="44" Name="en" />
+      <NameCon UId="46" Name="in" />
+    </Wire>
+    <Wire UId="51">
+      <IdentCon UId="21" />
+      <NameCon UId="44" Name="Acil_Yok" />
+    </Wire>
+    <Wire UId="52">
+      <IdentCon UId="22" />
+      <NameCon UId="44" Name="Sorter_Calisiyor" />
+    </Wire>
+    <Wire UId="53">
+      <IdentCon UId="23" />
+      <NameCon UId="44" Name="Sağ_Chute_Sorted_Sensoru" />
+    </Wire>
+    <Wire UId="54">
+      <IdentCon UId="24" />
+      <NameCon UId="44" Name="Sol_Chute_Sorted_Sensoru" />
+    </Wire>
+    <Wire UId="55">
+      <IdentCon UId="25" />
+      <NameCon UId="44" Name="Sağ_Chute_Aktif / Pasif" />
+    </Wire>
+    <Wire UId="56">
+      <IdentCon UId="26" />
+      <NameCon UId="44" Name="Sol_Chute_Aktif / Pasif" />
+    </Wire>
+    <Wire UId="57">
+      <IdentCon UId="27" />
+      <NameCon UId="44" Name="Chute_Rulo_Hatası" />
+    </Wire>
+    <Wire UId="58">
+      <OpenCon UId="48" />
+      <NameCon UId="44" Name="Divert_Sürücü_Hatası" />
+    </Wire>
+    <Wire UId="59">
+      <IdentCon UId="28" />
+      <NameCon UId="44" Name="Pozisyon_Olcme_Aktif" />
+    </Wire>
+    <Wire UId="60">
+      <IdentCon UId="29" />
+      <NameCon UId="44" Name="Sağ_Çıkış_Target" />
+    </Wire>
+    <Wire UId="61">
+      <IdentCon UId="30" />
+      <NameCon UId="44" Name="Sol_Çıkış_Target" />
+    </Wire>
+    <Wire UId="62">
+      <IdentCon UId="31" />
+      <NameCon UId="44" Name="CN_NO" />
+    </Wire>
+    <Wire UId="63">
+      <IdentCon UId="32" />
+      <NameCon UId="44" Name="Aktüel Encoder Değeri" />
+    </Wire>
+    <Wire UId="64">
+      <IdentCon UId="33" />
+      <NameCon UId="44" Name="Birinci_Divert_Min" />
+    </Wire>
+    <Wire UId="65">
+      <IdentCon UId="34" />
+      <NameCon UId="44" Name="Birinci_Divert_Max" />
+    </Wire>
+    <Wire UId="66">
+      <IdentCon UId="35" />
+      <NameCon UId="44" Name="İkinci_Divert_Min" />
+    </Wire>
+    <Wire UId="67">
+      <IdentCon UId="36" />
+      <NameCon UId="44" Name="İkinci_Divert_Max" />
+    </Wire>
+    <Wire UId="68">
+      <IdentCon UId="37" />
+      <NameCon UId="44" Name="Max_Kutu_Adedi" />
+    </Wire>
+    <Wire UId="69">
+      <NameCon UId="44" Name="1_sol_Divert_Çalıştır" />
+      <IdentCon UId="38" />
+    </Wire>
+    <Wire UId="70">
+      <NameCon UId="44" Name="2_sol_Divert_Çalıştır" />
+      <IdentCon UId="39" />
+    </Wire>
+    <Wire UId="71">
+      <NameCon UId="44" Name="1_sağ_Divert_Çalıştır" />
+      <IdentCon UId="40" />
+    </Wire>
+    <Wire UId="72">
+      <NameCon UId="44" Name="2_sağ_Divert_Çalıştır" />
+      <IdentCon UId="41" />
+    </Wire>
+    <Wire UId="73">
+      <NameCon UId="44" Name="Sort Hatası" />
+      <OpenCon UId="49" />
+    </Wire>
+    <Wire UId="74">
+      <IdentCon UId="42" />
+      <NameCon UId="46" Name="operand" />
+    </Wire>
+    <Wire UId="75">
+      <NameCon UId="46" Name="out" />
+      <NameCon UId="47" Name="in" />
+    </Wire>
+    <Wire UId="76">
+      <IdentCon UId="43" />
+      <NameCon UId="47" Name="operand" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="28" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="29" CompositionName="Items">
+                <AttributeList>
+                  <Culture>tr-TR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="2A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="2B" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="2C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>tr-TR</Culture>
+                  <Text>CN5 POS1250 Divert4</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="2D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>CN5 POS1250 Divert4</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="2E" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v3">
+  <NewLine Num="2" UId="21" />
+  <Token Text="IF" UId="22" />
+  <Blank Num="1" UId="23" />
+  <Access Scope="GlobalVariable" UId="24">
+    <Symbol UId="25">
+      <Component Name="DB541_Divert_Control" UId="26" />
+      <Token Text="." UId="27" />
+      <Component Name="SOl_2" UId="28">
+        <Token Text="[" UId="29" />
+        <Access Scope="LiteralConstant" UId="30">
+          <Constant UId="31">
+            <ConstantValue UId="33">4</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="34" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="35" />
+  <Token Text="THEN" UId="36" />
+  <NewLine Num="1" UId="37" />
+  <Blank Num="4" UId="38" />
+  <Access Scope="GlobalVariable" UId="39">
+    <Symbol UId="40">
+      <Component Name="DB541_Divert_Control" UId="41" />
+      <Token Text="." UId="42" />
+      <Component Name="SOL" UId="43">
+        <Token Text="[" UId="44" />
+        <Access Scope="LiteralConstant" UId="45">
+          <Constant UId="46">
+            <ConstantValue UId="48">4</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="49" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="50" />
+  <Token Text=":=" UId="51" />
+  <Blank Num="1" UId="52" />
+  <Access Scope="LiteralConstant" UId="53">
+    <Constant UId="54">
+      <ConstantValue UId="56">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="57" />
+  <NewLine Num="1" UId="58" />
+  <Token Text="END_IF" UId="59" />
+  <Token Text=";" UId="60" />
+  <NewLine Num="2" UId="61" />
+  <Token Text="IF" UId="62" />
+  <Blank Num="1" UId="63" />
+  <Access Scope="GlobalVariable" UId="64">
+    <Symbol UId="65">
+      <Component Name="DB541_Divert_Control" UId="66" />
+      <Token Text="." UId="67" />
+      <Component Name="SAG_2" UId="68">
+        <Token Text="[" UId="69" />
+        <Access Scope="LiteralConstant" UId="70">
+          <Constant UId="71">
+            <ConstantValue UId="73">4</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="74" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="75" />
+  <Token Text="THEN" UId="76" />
+  <NewLine Num="1" UId="77" />
+  <Blank Num="4" UId="78" />
+  <Access Scope="GlobalVariable" UId="79">
+    <Symbol UId="80">
+      <Component Name="DB541_Divert_Control" UId="81" />
+      <Token Text="." UId="82" />
+      <Component Name="SAG" UId="83">
+        <Token Text="[" UId="84" />
+        <Access Scope="LiteralConstant" UId="85">
+          <Constant UId="86">
+            <ConstantValue UId="88">4</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="89" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="90" />
+  <Token Text=":=" UId="91" />
+  <Blank Num="1" UId="92" />
+  <Access Scope="LiteralConstant" UId="93">
+    <Constant UId="94">
+      <ConstantValue UId="96">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="97" />
+  <NewLine Num="1" UId="98" />
+  <Token Text="END_IF" UId="99" />
+  <Token Text=";" UId="100" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="2F" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="30" CompositionName="Items">
+                <AttributeList>
+                  <Culture>tr-TR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="31" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="32" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="33" CompositionName="Items">
+                <AttributeList>
+                  <Culture>tr-TR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="34" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="35" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="Acil_OK" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="Otomatik" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="DB_ChuteSensors" />
+        <Component Name="DivertOut" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>4</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+        <Component Name="Sorted" />
+        <Component Name="Sensor_N_Trig" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="DB_ChuteSensors" />
+        <Component Name="DivertOut" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>8</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+        <Component Name="Sorted" />
+        <Component Name="Sensor_N_Trig" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="25">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>true</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="26">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>true</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="27">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>false</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="DB523.Pozisyon.Kontrol" />
+        <Component Name="Pozisyon Olcme Aktif" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="29">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>104</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="30">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>204</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="31">
+      <Symbol>
+        <Component Name="DB531_FIFO_Kontrol" />
+        <Component Name="CN_NO" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>6</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+        <Component Name="CNV_NO" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="DB522.HSC" />
+        <Component Name="CN5" />
+        <Component Name="Encoder_Value_mm" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="33">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="Divert1_Min_Pos" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>5</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="34">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="Divert1_Max_Pos" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>5</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="35">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="Divert2_Min_Pos" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>5</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="36">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="Divert2_Max_Pos" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>5</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="37">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>10</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="38">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="SOl_2" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>5</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="39">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="SOL" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>5</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="40">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="SAG_2" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>5</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="41">
+      <Symbol>
+        <Component Name="DB541_Divert_Control" />
+        <Component Name="SAG" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>5</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Call UId="42">
+      <CallInfo Name="FB548.Divert.Sorter.Chute" BlockType="FB">
+        <Instance Scope="LocalVariable" UId="43">
+          <Component Name="FB548.Divert.Sorter.Chute_CN4_Divert4" />
+        </Instance>
+        <Parameter Name="Acil_Yok" Section="Input" Type="Bool" />
+        <Parameter Name="Sorter_Calisiyor" Section="Input" Type="Bool" />
+        <Parameter Name="Sağ_Chute_Sorted_Sensoru" Section="Input" Type="Bool" />
+        <Parameter Name="Sol_Chute_Sorted_Sensoru" Section="Input" Type="Bool" />
+        <Parameter Name="Sağ_Chute_Aktif / Pasif" Section="Input" Type="Bool" />
+        <Parameter Name="Sol_Chute_Aktif / Pasif" Section="Input" Type="Bool" />
+        <Parameter Name="Chute_Rulo_Hatası" Section="Input" Type="Bool" />
+        <Parameter Name="Divert_Sürücü_Hatası" Section="Input" Type="Bool" />
+        <Parameter Name="Pozisyon_Olcme_Aktif" Section="Input" Type="Bool" />
+        <Parameter Name="Sağ_Çıkış_Target" Section="Input" Type="Int" />
+        <Parameter Name="Sol_Çıkış_Target" Section="Input" Type="Int" />
+        <Parameter Name="CN_NO" Section="Input" Type="Int" />
+        <Parameter Name="Aktüel Encoder Değeri" Section="Input" Type="LReal" />
+        <Parameter Name="Birinci_Divert_Min" Section="Input" Type="LReal" />
+        <Parameter Name="Birinci_Divert_Max" Section="Input" Type="LReal" />
+        <Parameter Name="İkinci_Divert_Min" Section="Input" Type="LReal" />
+        <Parameter Name="İkinci_Divert_Max" Section="Input" Type="LReal" />
+        <Parameter Name="Max_Kutu_Adedi" Section="Input" Type="Int" />
+        <Parameter Name="1_sol_Divert_Çalıştır" Section="Output" Type="Bool" />
+        <Parameter Name="2_sol_Divert_Çalıştır" Section="Output" Type="Bool" />
+        <Parameter Name="1_sağ_Divert_Çalıştır" Section="Output" Type="Bool" />
+        <Parameter Name="2_sağ_Divert_Çalıştır" Section="Output" Type="Bool" />
+        <Parameter Name="Sort Hatası" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="46">
+      <Powerrail />
+      <NameCon UId="42" Name="en" />
+    </Wire>
+    <Wire UId="47">
+      <IdentCon UId="21" />
+      <NameCon UId="42" Name="Acil_Yok" />
+    </Wire>
+    <Wire UId="48">
+      <IdentCon UId="22" />
+      <NameCon UId="42" Name="Sorter_Calisiyor" />
+    </Wire>
+    <Wire UId="49">
+      <IdentCon UId="23" />
+      <NameCon UId="42" Name="Sağ_Chute_Sorted_Sensoru" />
+    </Wire>
+    <Wire UId="50">
+      <IdentCon UId="24" />
+      <NameCon UId="42" Name="Sol_Chute_Sorted_Sensoru" />
+    </Wire>
+    <Wire UId="51">
+      <IdentCon UId="25" />
+      <NameCon UId="42" Name="Sağ_Chute_Aktif / Pasif" />
+    </Wire>
+    <Wire UId="52">
+      <IdentCon UId="26" />
+      <NameCon UId="42" Name="Sol_Chute_Aktif / Pasif" />
+    </Wire>
+    <Wire UId="53">
+      <IdentCon UId="27" />
+      <NameCon UId="42" Name="Chute_Rulo_Hatası" />
+    </Wire>
+    <Wire UId="54">
+      <OpenCon UId="44" />
+      <NameCon UId="42" Name="Divert_Sürücü_Hatası" />
+    </Wire>
+    <Wire UId="55">
+      <IdentCon UId="28" />
+      <NameCon UId="42" Name="Pozisyon_Olcme_Aktif" />
+    </Wire>
+    <Wire UId="56">
+      <IdentCon UId="29" />
+      <NameCon UId="42" Name="Sağ_Çıkış_Target" />
+    </Wire>
+    <Wire UId="57">
+      <IdentCon UId="30" />
+      <NameCon UId="42" Name="Sol_Çıkış_Target" />
+    </Wire>
+    <Wire UId="58">
+      <IdentCon UId="31" />
+      <NameCon UId="42" Name="CN_NO" />
+    </Wire>
+    <Wire UId="59">
+      <IdentCon UId="32" />
+      <NameCon UId="42" Name="Aktüel Encoder Değeri" />
+    </Wire>
+    <Wire UId="60">
+      <IdentCon UId="33" />
+      <NameCon UId="42" Name="Birinci_Divert_Min" />
+    </Wire>
+    <Wire UId="61">
+      <IdentCon UId="34" />
+      <NameCon UId="42" Name="Birinci_Divert_Max" />
+    </Wire>
+    <Wire UId="62">
+      <IdentCon UId="35" />
+      <NameCon UId="42" Name="İkinci_Divert_Min" />
+    </Wire>
+    <Wire UId="63">
+      <IdentCon UId="36" />
+      <NameCon UId="42" Name="İkinci_Divert_Max" />
+    </Wire>
+    <Wire UId="64">
+      <IdentCon UId="37" />
+      <NameCon UId="42" Name="Max_Kutu_Adedi" />
+    </Wire>
+    <Wire UId="65">
+      <NameCon UId="42" Name="1_sol_Divert_Çalıştır" />
+      <IdentCon UId="38" />
+    </Wire>
+    <Wire UId="66">
+      <NameCon UId="42" Name="2_sol_Divert_Çalıştır" />
+      <IdentCon UId="39" />
+    </Wire>
+    <Wire UId="67">
+      <NameCon UId="42" Name="1_sağ_Divert_Çalıştır" />
+      <IdentCon UId="40" />
+    </Wire>
+    <Wire UId="68">
+      <NameCon UId="42" Name="2_sağ_Divert_Çalıştır" />
+      <IdentCon UId="41" />
+    </Wire>
+    <Wire UId="69">
+      <NameCon UId="42" Name="Sort Hatası" />
+      <OpenCon UId="45" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="36" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="37" CompositionName="Items">
+                <AttributeList>
+                  <Culture>tr-TR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="38" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="39" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="3A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>tr-TR</Culture>
+                  <Text>CN6 POS1310 Divert5</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="3B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>CN6 POS1310 Divert5</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="3C" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v3">
+  <NewLine Num="2" UId="21" />
+  <Token Text="IF" UId="22" />
+  <Blank Num="1" UId="23" />
+  <Access Scope="GlobalVariable" UId="24">
+    <Symbol UId="25">
+      <Component Name="DB541_Divert_Control" UId="26" />
+      <Token Text="." UId="27" />
+      <Component Name="SOl_2" UId="28">
+        <Token Text="[" UId="29" />
+        <Access Scope="LiteralConstant" UId="30">
+          <Constant UId="31">
+            <ConstantValue UId="33">5</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="34" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="35" />
+  <Token Text="THEN" UId="36" />
+  <NewLine Num="1" UId="37" />
+  <Blank Num="4" UId="38" />
+  <Access Scope="GlobalVariable" UId="39">
+    <Symbol UId="40">
+      <Component Name="DB541_Divert_Control" UId="41" />
+      <Token Text="." UId="42" />
+      <Component Name="SOL" UId="43">
+        <Token Text="[" UId="44" />
+        <Access Scope="LiteralConstant" UId="45">
+          <Constant UId="46">
+            <ConstantValue UId="48">5</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="49" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="50" />
+  <Token Text=":=" UId="51" />
+  <Blank Num="1" UId="52" />
+  <Access Scope="LiteralConstant" UId="53">
+    <Constant UId="54">
+      <ConstantValue UId="56">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="57" />
+  <NewLine Num="1" UId="58" />
+  <Token Text="END_IF" UId="59" />
+  <Token Text=";" UId="60" />
+  <NewLine Num="2" UId="61" />
+  <Token Text="IF" UId="62" />
+  <Blank Num="1" UId="63" />
+  <Access Scope="GlobalVariable" UId="64">
+    <Symbol UId="65">
+      <Component Name="DB541_Divert_Control" UId="66" />
+      <Token Text="." UId="67" />
+      <Component Name="SAG_2" UId="68">
+        <Token Text="[" UId="69" />
+        <Access Scope="LiteralConstant" UId="70">
+          <Constant UId="71">
+            <ConstantValue UId="73">5</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="74" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="75" />
+  <Token Text="THEN" UId="76" />
+  <NewLine Num="1" UId="77" />
+  <Blank Num="4" UId="78" />
+  <Access Scope="GlobalVariable" UId="79">
+    <Symbol UId="80">
+      <Component Name="DB541_Divert_Control" UId="81" />
+      <Token Text="." UId="82" />
+      <Component Name="SAG" UId="83">
+        <Token Text="[" UId="84" />
+        <Access Scope="LiteralConstant" UId="85">
+          <Constant UId="86">
+            <ConstantValue UId="88">5</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="89" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="90" />
+  <Token Text=":=" UId="91" />
+  <Blank Num="1" UId="92" />
+  <Access Scope="LiteralConstant" UId="93">
+    <Constant UId="94">
+      <ConstantValue UId="96">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="97" />
+  <NewLine Num="1" UId="98" />
+  <Token Text="END_IF" UId="99" />
+  <Token Text=";" UId="100" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="3D" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="3E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>tr-TR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="3F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="40" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="41" CompositionName="Items">
+                <AttributeList>
+                  <Culture>tr-TR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="42" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="43" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="44" CompositionName="Items">
+            <AttributeList>
+              <Culture>tr-TR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="45" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>
